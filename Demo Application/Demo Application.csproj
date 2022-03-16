@@ -122,7 +122,7 @@
   <PropertyGroup>
     <NugetTools>$(PkgNuGet_CommandLine)\tools</NugetTools>
     <SquirrelTools>$(Pkgsquirrel_windows)\tools</SquirrelTools>
-    <Version>3.0.0</Version>
+    <Version>4.0.0</Version>
     <NuspecFile>$(SolutionDir)Demo Application\DemoApplication.nuspec</NuspecFile>
     <NuspecFile1>"$(SolutionDir)Demo Application\DemoApplication.nuspec"</NuspecFile1>
     <OutputDir_>"$(SolutionDir)Deployment\GeneratedNugets"</OutputDir_>
