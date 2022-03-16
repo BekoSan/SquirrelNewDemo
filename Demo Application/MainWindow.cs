@@ -37,7 +37,7 @@ namespace Demo_Application
         private async Task CheckForUpdates() 
         {
             
-            using (var manager = new UpdateManager("https://1drv.ms/u/s!AkDWZOZxhYz5wWxQH4h6jNso17R8?e=2wphwB")) 
+            using (var manager = new UpdateManager("https://github.com/BekoSan/SquirrelNewDemo")) 
             {
                 await manager.UpdateApp(); 
             }
