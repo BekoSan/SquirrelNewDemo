@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>DemoApplication</id>
+    <version>1.0.0</version>
+    <title>Demo application</title>
+    <authors>Abubakr Mahdi</authors>
+    <owners>Abubakr Mahdi</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
+    <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
+    <description>Demo application squirrel.</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Tag1 Tag2</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\**" target="lib\net45" />
+  </files>
+</package>
