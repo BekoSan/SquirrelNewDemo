@@ -18,8 +18,16 @@ namespace Demo_Application
         public     MainWindow() 
         {
             InitializeComponent();
-             CheckForUpdates();
+            worker.DoWork += Worker_DoWork;
         }
+
+        private async  void  Worker_DoWork(object sender, DoWorkEventArgs e)
+        {
+           await  CheckForUpdates();
+        }
+
+        UpdateManager manager;
+        BackgroundWorker worker;
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
@@ -36,8 +44,8 @@ namespace Demo_Application
 
         private async Task CheckForUpdates() 
         {
-            
-            using (var manager = new UpdateManager("https://github.com/BekoSan/SquirrelNewDemo")) 
+             
+            using (manager = await   UpdateManager.GitHubUpdateManager(@"https://github.com/BekoSan/SquirrelNewDemo"))
             {
                 await manager.UpdateApp(); 
             }
@@ -69,7 +77,7 @@ namespace Demo_Application
 
         private void button1_Click(object sender, EventArgs e)
         {
-            RunRelaseify(@"D:\Windows Desktop Applications\Demo\SquirrelDemo\DemoApplication.1.0.2.nupkg");
+            //RunRelaseify(@"D:\Windows Desktop Applications\Demo\SquirrelDemo\DemoApplication.1.0.2.nupkg");
         }
     }
 }
